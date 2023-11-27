@@ -20,7 +20,7 @@ def get_weather():
             return jsonify({'error': 'City name not provided'})
         if not output_format:
             return jsonify({'error': 'output_format not provided'})
-        api_key = base64.b64decode("api_key")
+        api_key = base64.b64decode("MzEzNzFiYzVjM21zaDM0ZjM5OWIwNzk2MWQ0NnAxOTI4ODNqc24yYmE3NTYyZTMxOTQ=")
         base_url = 'https://weatherapi-com.p.rapidapi.com/current.json'
         params = {'q': city}
         headers = {
